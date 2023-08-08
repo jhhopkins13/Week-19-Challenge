@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: '/index.html'
     }),
     new WebpackPwaManifest({
       name: 'JATE App',
@@ -37,7 +37,7 @@ module.exports = {
       ],
     }),
     new InjectManifest({
-      swSrc: './client/src-sw.js', 
+      swSrc: '/src-sw.js', 
       swDest: 'webpack-builder.js'
     })
   ],
